@@ -2,7 +2,25 @@ import React from 'react';
 
 function Links(props) {
   return (
+    <div>
+     
+      
     <div className="Links">
+      <br/><br/><br/>
+    <img
+          className="fadeInUp logo"
+          alt="India COVID-19 Tracker"
+          src="/covid-banner-web.png"
+          class="center"
+          height="200"
+          width="700"
+          style={{
+            animationDelay: '0.0s',
+            width: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            height: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            transition: 'all 0.3s ease-in-out',
+          }}
+        />
       <div className="link fadeInUp" style={{animationDelay: '0.2s'}}>
         <h3>HELPLINE NUMBERS [by State]</h3>
         <a
@@ -24,9 +42,11 @@ function Links(props) {
           https://www.mohfw.gov.in/
         </a>
       </div>
-
+     
+          
       <div className="link fadeInUp" style={{animationDelay: '0.4s'}}>
-        <h3>WHO : COVID-19 Home Page</h3>
+        
+     <h3> WHO : COVID-19 Home Page</h3>
         <a
           href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
           target="_blank"
@@ -57,11 +77,26 @@ function Links(props) {
           https://www.indiatvnews.com/fyi/pm-cares-fund-details-donations-account-number-emergency-covid-19-help-602559
         </a>
       </div>
+      <img
+          className="fadeInUp logo"
+          alt="India COVID-19 Tracker"
+          src="/DoTheFive.gif"
+          class="center"
+          height="700"
+          width="300"
+          style={{
+            animationDelay: '0.0s',
+            width: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            height: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            transition: 'all 0.3s ease-in-out',
+          }}
+        />
+      
 
       
       
     </div>
-  );
+    </div>  );
 }
 
 export default Links;

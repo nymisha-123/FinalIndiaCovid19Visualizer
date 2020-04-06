@@ -30,11 +30,9 @@ function ChoroplethMap({
       const height = +svg.attr('height');
 
       const handleMouseover = (name) => {
-        try {
+        
           setHoveredRegion(name, mapMeta);
-        } catch (err) {
-          console.log('err', err);
-        }
+        
       };
 
       const topology = topojson.feature(

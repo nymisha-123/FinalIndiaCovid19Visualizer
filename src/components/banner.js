@@ -44,7 +44,21 @@ function Banner(props) {
       className="Banner fadeInUp"
       style={{animationDelay: '0.2s'}}
     >
-      <div><h1>Stay Home. Stay Safe!!!!!</h1></div>
+      <div><h1 class="toto"> <img
+          className="fadeInUp logo"
+          alt="India COVID-19 Tracker"
+          src="/pandemic.webp"
+          width="50"
+          height="50"
+          align="middle"
+         
+          style={{
+            animationDelay: '0.0s',
+            width: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            height: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            transition: 'all 0.3s ease-in-out',
+          }}
+        />  Stay Home. Stay Safe!!!!!</h1></div>
     </div>
   );
 }

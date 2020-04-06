@@ -110,7 +110,22 @@ function Home(props) {
               className="timeseries-header fadeInUp"
               style={{animationDelay: '1.5s'}}
             >
-              <center><p1 ><h1 >Status </h1></p1></center>
+              <center><p1 ><h1 > <img
+          className="fadeInUp logo"
+          alt="India COVID-19 Tracker"
+          src="/earth-wearing-mask.jpg"
+          width="50"
+          height="50"
+          align="middle"
+         
+          style={{
+            animationDelay: '0.0s',
+            width: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            height: window.location.pathname === '/clusters' ? '1.5rem' : '',
+            transition: 'all 0.3s ease-in-out',
+          }}
+        />
+      Status </h1></p1></center>
               
               
             </div>
